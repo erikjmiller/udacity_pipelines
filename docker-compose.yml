@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: udacity_pipelines
+    ports:
+      - 8080:8080
+    volumes:
+      - ./dags:/usr/local/airflow/dags
+      - ./plugins:/usr/local/airflow/plugins
+    environment:
+      FERNET_KEY: wipw1M-kkleeEjJga3wVtv8Y7uC7YKT7V15SorWJ6XI=
+
+

@@ -1,0 +1,9 @@
+{
+  "comment": "The json contained in this file should be copy pasted into an airflow json variable named udac_dend_config",
+  "insert_mode":{
+    "users":"delete-load",
+    "songs":"delete-load",
+    "artists":"delete-load",
+    "time":"delete-load"
+  }
+}
